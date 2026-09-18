@@ -3,87 +3,71 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ekspedisi Dunia Purba</title>
+<title>Ekspedisi Dunia Purba — 50 Makhluk Terkenal</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Courier+Prime&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Courier Prime',monospace;background:#1c130d;color:#ece0cb;line-height:1.6;min-height:100vh;background-image:radial-gradient(circle at 15% 10%,rgba(61,107,69,.28),transparent 45%),radial-gradient(circle at 85% 80%,rgba(138,106,69,.25),transparent 50%),linear-gradient(160deg,#1c130d,#241811 55%,#120c08)}
-.hero{min-height:60vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 20px 40px;background:radial-gradient(ellipse at 50% 0%,rgba(255,155,33,.16),transparent 60%)}
-.kicker{font-size:.72rem;letter-spacing:.45em;color:#ffc861;text-transform:uppercase;margin-bottom:20px}
-h1{font-family:'Cinzel',serif;font-weight:900;font-size:clamp(2.2rem,8vw,4rem);line-height:1.02;color:#ece0cb;text-shadow:0 3px 0 #000,0 0 40px rgba(255,155,33,.4);margin-bottom:20px}
-h1::after{content:"";display:block;width:130px;height:3px;margin:22px auto 0;background:linear-gradient(90deg,transparent,#ff9b21,transparent)}
-.sub{color:#b9a888;max-width:600px;margin:0 auto 28px;font-size:.95rem}
-.stat{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin:0 auto 30px;padding:16px 24px;background:rgba(0,0,0,.3);border:1px solid rgba(138,106,69,.4);border-radius:10px;max-width:520px}
-.stat div{display:flex;flex-direction:column;align-items:center}
-.stat b{font-family:'Cinzel',serif;font-size:1.6rem;color:#ff9b21;line-height:1}
-.stat span{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:#8f8d82;margin-top:4px}
-.btn{display:inline-block;padding:14px 32px;font-family:'Cinzel',serif;font-weight:700;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:#1c130d;background:linear-gradient(180deg,#ffc861,#ff9b21);border:2px solid #000;border-radius:4px;box-shadow:0 6px 0 #7a3f00}
-.galeri{padding:40px 16px 70px;max-width:1320px;margin:0 auto}
-h2{font-family:'Cinzel',serif;font-size:clamp(1.4rem,5vw,2.1rem);text-align:center;margin-bottom:10px}
-h2::before,h2::after{content:"◆";color:#ff9b21;font-size:.6em;margin:0 14px}
-.sectionsub{text-align:center;color:#8f8d82;font-size:.85rem;margin-bottom:28px}
-.controls{display:flex;flex-direction:column;gap:12px;align-items:center;margin-bottom:28px}
-#search{width:100%;max-width:480px;padding:13px 18px;font-size:.9rem;color:#ece0cb;background:rgba(0,0,0,.35);border:1px solid rgba(138,106,69,.5);border-radius:30px;outline:none;font-family:inherit}
-#search:focus{border-color:#ff9b21;box-shadow:0 0 18px rgba(255,155,33,.35)}
-.filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
-.fbtn{padding:8px 14px;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#b9a888;background:rgba(0,0,0,.3);border:1px solid rgba(138,106,69,.5);border-radius:20px;cursor:pointer;font-family:inherit}
-.fbtn.active{color:#1c130d;background:linear-gradient(180deg,#ffc861,#ff9b21);border-color:#000;font-weight:700}
-.counter{font-size:.75rem;color:#8f8d82}
+body{font-family:'Courier Prime',monospace;background:#1c130d;color:#ece0cb;line-height:1.6;min-height:100vh}
+.hero{text-align:center;padding:50px 20px 30px;background:linear-gradient(180deg,#1e3626,#1c130d);border-bottom:3px solid #4a3320}
+.hero h1{font-family:'Cinzel',serif;font-size:clamp(1.8rem,7vw,3rem);color:#ffc861;margin-bottom:12px;text-shadow:0 3px 0 #000}
+.hero p{color:#b9a888;max-width:500px;margin:0 auto;font-size:.9rem}
+.hero .total{margin-top:14px;color:#ff9b21;font-family:'Cinzel',serif;font-size:1.2rem}
+.galeri{max-width:1300px;margin:0 auto;padding:30px 16px 60px}
+#search{width:100%;max-width:440px;padding:12px 20px;background:rgba(0,0,0,.4);color:#ece0cb;border:1px solid #8a6a45;border-radius:30px;font-family:inherit;font-size:.88rem;display:block;margin:0 auto 16px;outline:none}
+#search:focus{border-color:#ff9b21;box-shadow:0 0 18px rgba(255,155,33,.3)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:16px}
+.fbtn{padding:7px 13px;background:rgba(0,0,0,.3);color:#b9a888;border:1px solid #8a6a45;border-radius:20px;cursor:pointer;font-family:inherit;font-size:.7rem;text-transform:uppercase;letter-spacing:.05em}
+.fbtn.active{background:#ff9b21;color:#1c130d;font-weight:700;border-color:#000}
+.counter{text-align:center;color:#8f8d82;font-size:.78rem;margin-bottom:20px}
 .counter strong{color:#ffc861}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
-.card{background:linear-gradient(170deg,#2e2015,#241811);border:1px solid rgba(138,106,69,.45);border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.55);cursor:pointer;transition:.25s;outline:none;position:relative}
-.card:hover,.card:focus{transform:translateY(-6px);border-color:#ff9b21;box-shadow:0 10px 30px rgba(0,0,0,.55),0 0 22px rgba(255,155,33,.45)}
-.card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#3d6b45,#ff9b21,#3d6b45);opacity:.75;z-index:3}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.card{background:linear-gradient(170deg,#2e2015,#241811);border:1px solid #8a6a45;border-radius:12px;overflow:hidden;cursor:pointer;transition:.2s;position:relative}
+.card:hover{transform:translateY(-5px);border-color:#ff9b21;box-shadow:0 10px 24px rgba(0,0,0,.5),0 0 18px rgba(255,155,33,.3)}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#3d6b45,#ff9b21,#3d6b45);opacity:.75;z-index:3}
 .cmedia{position:relative;aspect-ratio:4/3;overflow:hidden;display:flex;align-items:center;justify-content:center}
 .cmedia::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(20,13,8,.9));pointer-events:none;z-index:2}
-.cmedia img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s;z-index:1;background:#1c130d}
+.cmedia img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:.5s;z-index:1;background:#1c130d}
 .cmedia img.loaded{opacity:1}
-.emoji{font-size:5rem;line-height:1;position:relative;z-index:0;filter:drop-shadow(0 6px 12px rgba(0,0,0,.6))}
+.emoji{font-size:4.5rem;position:relative;z-index:0;filter:drop-shadow(0 5px 10px rgba(0,0,0,.6))}
 .cmedia.paleo{background:linear-gradient(135deg,#3a2010,#7a3a15,#3a2010)}
 .cmedia.trias{background:linear-gradient(135deg,#5a2a10,#b85a1a,#5a2a10)}
 .cmedia.juras{background:linear-gradient(135deg,#14281a,#3d6b45,#14281a)}
 .cmedia.kapur{background:linear-gradient(135deg,#142a3a,#2d5a6b,#142a3a)}
 .cmedia.keno{background:linear-gradient(135deg,#2a2a3a,#5a5a6b,#2a2a3a)}
-.cinfo{padding:14px 16px 18px;position:relative;z-index:4}
-.badge{display:inline-block;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;padding:4px 10px;border-radius:3px;color:#ffc861;background:rgba(255,155,33,.1);border:1px solid rgba(255,155,33,.4);margin-bottom:8px}
-.cinfo h3{font-family:'Cinzel',serif;font-size:1.02rem;color:#ece0cb;margin-bottom:5px;line-height:1.2}
-.ctime{font-size:.7rem;color:#7fb089;margin-bottom:10px}
-.clink{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:#ff9b21;border-bottom:1px dashed rgba(255,155,33,.5);padding-bottom:2px}
-.footer{text-align:center;padding:40px 20px;border-top:1px solid rgba(138,106,69,.35);color:#b9a888;font-size:.85rem}
-.footer strong{color:#ffc861;font-family:'Cinzel',serif}
+.cinfo{padding:12px 14px 16px;position:relative;z-index:4}
+.badge{display:inline-block;font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;padding:3px 9px;border-radius:3px;color:#ffc861;background:rgba(255,155,33,.1);border:1px solid rgba(255,155,33,.4);margin-bottom:7px}
+.cinfo h3{font-family:'Cinzel',serif;font-size:.98rem;color:#ece0cb;margin-bottom:4px;line-height:1.2}
+.ctime{font-size:.68rem;color:#7fb089}
 .modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:20px;z-index:1000;opacity:0;visibility:hidden;transition:.3s}
 .modal.open{opacity:1;visibility:visible}
-.mback{position:absolute;inset:0;background:rgba(8,5,3,.85);backdrop-filter:blur(6px)}
-.mbox{position:relative;width:min(720px,100%);max-height:92vh;overflow-y:auto;background:linear-gradient(170deg,#2e2015,#1c130d);border:1px solid #8a6a45;border-top:4px solid #ff9b21;border-radius:14px;transform:translateY(28px);transition:.35s;box-shadow:0 30px 70px rgba(0,0,0,.8)}
+.mback{position:absolute;inset:0;background:rgba(8,5,3,.88);backdrop-filter:blur(6px)}
+.mbox{position:relative;width:min(700px,100%);max-height:92vh;overflow-y:auto;background:linear-gradient(170deg,#2e2015,#1c130d);border:1px solid #8a6a45;border-top:4px solid #ff9b21;border-radius:12px;transform:translateY(20px);transition:.3s;box-shadow:0 30px 70px rgba(0,0,0,.85)}
 .modal.open .mbox{transform:translateY(0)}
-.mclose{position:absolute;top:12px;right:12px;width:36px;height:36px;font-size:1.3rem;color:#ece0cb;background:rgba(28,19,13,.8);border:1px solid rgba(255,155,33,.5);border-radius:50%;z-index:5;cursor:pointer}
+.mclose{position:absolute;top:10px;right:10px;width:36px;height:36px;font-size:1.3rem;color:#ece0cb;background:rgba(28,19,13,.9);border:1px solid rgba(255,155,33,.5);border-radius:50%;z-index:5;cursor:pointer}
 .mclose:hover{background:#ff9b21;color:#1c130d}
-.mmedia{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:14px 14px 0 0;background:#000}
-.mmedia img{width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .5s}
+.mmedia{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:12px 12px 0 0;background:#000}
+.mmedia img{width:100%;height:100%;object-fit:contain;opacity:0;transition:.5s}
 .mmedia img.loaded{opacity:1}
-.memoji{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:6rem;z-index:0;animation:bob 3s ease-in-out infinite}
-@keyframes bob{50%{transform:translateY(-10px)}}
-.mbody{padding:24px 26px 30px}
-.mbody h3{font-family:'Cinzel',serif;font-size:clamp(1.4rem,5vw,2rem);color:#ece0cb;margin-bottom:6px;text-shadow:0 2px 0 #000}
-.msci{font-style:italic;color:#8f8d82;font-size:.88rem;margin-bottom:18px}
-.meta{list-style:none;display:grid;gap:10px;margin:18px 0;padding:16px;background:rgba(0,0,0,.28);border-left:3px solid #3d6b45;border-radius:6px}
-.meta li{display:flex;gap:12px;align-items:flex-start}
-.meta .ic{font-size:1.1rem;flex-shrink:0;width:22px}
-.meta strong{display:block;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:#8f8d82;margin-bottom:2px}
-.meta span:not(.ic){font-size:.88rem;color:#ffc861}
-.mdesc{font-size:.9rem;color:#b9a888;line-height:1.8;border-top:1px dashed rgba(138,106,69,.4);padding-top:16px;margin-top:16px}
-.wikilink{display:inline-block;margin-top:16px;padding:10px 18px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:#ff9b21;border:1px solid rgba(255,155,33,.5);border-radius:6px;text-decoration:none;background:rgba(255,155,33,.08)}
-.empty{text-align:center;padding:60px 20px;color:#b9a888}
+.memoji{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:6rem;z-index:0}
+.mbody{padding:22px 24px 28px}
+.mbody h3{font-family:'Cinzel',serif;font-size:clamp(1.3rem,5vw,1.7rem);color:#ece0cb;margin-bottom:4px;text-shadow:0 2px 0 #000}
+.msci{font-style:italic;color:#8f8d82;font-size:.85rem;margin-bottom:16px}
+.meta{list-style:none;display:grid;gap:8px;margin:14px 0;padding:14px 16px;background:rgba(0,0,0,.3);border-left:3px solid #3d6b45;border-radius:6px}
+.meta li{display:flex;gap:10px}
+.meta .ic{font-size:1rem;flex-shrink:0;width:20px}
+.meta strong{display:block;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:#8f8d82;margin-bottom:1px}
+.meta span:not(.ic){font-size:.86rem;color:#ffc861}
+.mdesc{font-size:.9rem;color:#b9a888;line-height:1.75;border-top:1px dashed rgba(138,106,69,.4);padding-top:14px;margin-top:14px}
+.wikilink{display:inline-block;margin-top:14px;padding:9px 16px;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:#ff9b21;border:1px solid rgba(255,155,33,.5);border-radius:6px;text-decoration:none;background:rgba(255,155,33,.08)}
+.wikilink:hover{background:#ff9b21;color:#1c130d}
+.footer{text-align:center;padding:30px 20px;border-top:1px solid rgba(138,106,69,.35);color:#b9a888;font-size:.8rem}
 @media(max-width:640px){
-.hero{min-height:55vh;padding:50px 18px 30px}
-.galeri{padding:30px 12px 60px}
-.grid{grid-template-columns:1fr 1fr;gap:12px}
-.cinfo{padding:11px 10px 14px}
-.cinfo h3{font-size:.88rem}
-.ctime{font-size:.62rem}
-.emoji{font-size:3.6rem}
+.grid{grid-template-columns:1fr 1fr;gap:10px}
+.cinfo{padding:10px}
+.cinfo h3{font-size:.85rem}
+.emoji{font-size:3.4rem}
 .modal{padding:10px;align-items:flex-end}
-.mbox{max-height:94vh;border-radius:16px 16px 0 0}
+.mbox{max-height:94vh;border-radius:14px 14px 0 0}
 .mbody{padding:18px 16px 24px}
 .memoji{font-size:5rem}
 }
@@ -92,47 +76,34 @@ h2::before,h2::after{content:"◆";color:#ff9b21;font-size:.6em;margin:0 14px}
 </head>
 <body>
 
-<header class="hero">
-  <div>
-    <p class="kicker">✦ Arsip Paleontologi ✦</p>
-    <h1>Ekspedisi<br>Dunia Purba</h1>
-    <p class="sub">Jelajahi makhluk purba dari Paleozoikum hingga Zaman Es. Ketuk setiap kartu untuk membuka berkas lengkap dari Wikipedia.</p>
-    <div class="stat">
-      <div><b id="sTotal">0</b><span>Makhluk</span></div>
-      <div><b>500</b><span>Juta Tahun</span></div>
-      <div><b>5</b><span>Era</span></div>
-    </div>
-    <a href="#galeri" class="btn">Mulai Ekspedisi ↓</a>
-  </div>
-</header>
+<div class="hero">
+  <h1>Ekspedisi Dunia Purba</h1>
+  <p>50 makhluk purba paling terkenal dari Paleozoikum hingga Zaman Es.</p>
+  <div class="total"><span id="sTotal">0</span> Makhluk Purba</div>
+</div>
 
-<main class="galeri" id="galeri">
-  <h2>Arsip Makhluk Purba</h2>
-  <p class="sectionsub">Filter berdasarkan era, atau cari nama makhluk favorit Anda.</p>
-  <div class="controls">
-    <input id="search" type="text" placeholder="🔍  Cari nama makhluk purba..." autocomplete="off">
-    <div class="filters" id="filters">
-      <button class="fbtn active" data-era="all">Semua</button>
-      <button class="fbtn" data-era="paleo">Paleozoikum</button>
-      <button class="fbtn" data-era="trias">Trias</button>
-      <button class="fbtn" data-era="juras">Juras</button>
-      <button class="fbtn" data-era="kapur">Kapur</button>
-      <button class="fbtn" data-era="keno">Kenozoikum</button>
-    </div>
-    <p class="counter">Menampilkan <strong id="cn">0</strong> dari <strong id="ct">0</strong> makhluk</p>
+<div class="galeri">
+  <input id="search" placeholder="🔍 Cari nama makhluk purba..." autocomplete="off">
+  <div class="filters">
+    <button class="fbtn active" data-era="all">Semua</button>
+    <button class="fbtn" data-era="paleo">Paleozoikum</button>
+    <button class="fbtn" data-era="trias">Trias</button>
+    <button class="fbtn" data-era="juras">Juras</button>
+    <button class="fbtn" data-era="kapur">Kapur</button>
+    <button class="fbtn" data-era="keno">Kenozoikum</button>
   </div>
+  <p class="counter">Menampilkan <strong id="cn">0</strong> dari <strong id="ct">0</strong> makhluk</p>
   <div class="grid" id="grid"></div>
-  <p class="empty" id="empty" hidden>😔 Tidak ada makhluk yang cocok.</p>
-</main>
+</div>
 
 <footer class="footer">
-  <p>🦴 <strong>Ekspedisi Dunia Purba</strong> — Sumber: Wikipedia (CC BY-SA 4.0)</p>
+  <p>🦴 <strong style="color:#ffc861;font-family:'Cinzel',serif">Ekspedisi Dunia Purba</strong> — Sumber: Wikipedia (CC BY-SA 4.0)</p>
 </footer>
 
-<div class="modal" id="modal" aria-hidden="true">
-  <div class="mback" data-close></div>
+<div class="modal" id="modal">
+  <div class="mback" onclick="closeModal()"></div>
   <div class="mbox">
-    <button class="mclose" data-close>×</button>
+    <button class="mclose" onclick="closeModal()">×</button>
     <div class="mmedia">
       <span class="memoji" id="memoji">🦖</span>
       <img id="mimg" alt="">
@@ -147,63 +118,274 @@ h2::before,h2::after{content:"◆";color:#ff9b21;font-size:.6em;margin:0 14px}
         <li><span class="ic">🌍</span><div><strong>Lokasi</strong><span id="mlok">—</span></div></li>
         <li><span class="ic">🍖</span><div><strong>Diet</strong><span id="mdiet">—</span></div></li>
         <li><span class="ic">📏</span><div><strong>Ukuran</strong><span id="mukuran">—</span></div></li>
-        <li><span class="ic">🏛️</span><div><strong>Klasifikasi</strong><span id="mklas">—</span></div></li>
       </ul>
       <div class="mdesc" id="mdesc">—</div>
-      <a class="wikilink" id="mwiki" href="#" target="_blank" rel="noopener">Buka Artikel Wikipedia →</a>
+      <a class="wikilink" id="mwiki" href="#" target="_blank" rel="noopener">Buka Wikipedia →</a>
     </div>
   </div>
 </div>
 
 <script>
-/* ============================================================
-   DATA RINGKAS - Format: nama|wiki|periode|waktu|tanggal|penemu|lokasi|diet|ukuran|klasifikasi|deskripsi|era
-   ============================================================ */
-var RAW=`
-Dimetrodon|Dimetrodon|Permian|295-272 Juta TL|1 Jan 1878|Edward D. Cope|Texas, AS|Karnivora|Panjang 3 m|Synapsida / Sphenacodontidae|Layar punggung untuk mengatur suhu tubuh. Hidup jauh sebelum dinosaurus.|paleo
-Edaphosaurus|Edaphosaurus|Permian|300-280 Juta TL|1 Jan 1882|Edward D. Cope|Texas & Eropa|Herbivora|Panjang 3,5 m|Synapsida / Edaphosauridae|Herbivora awal dengan layar punggung.|paleo
-Dunkleosteus|Dunkleosteus|Devon|382-358 Juta TL|1 Jan 1873|David Dunkle|Ohio, AS|Karnivora|Panjang 8 m|Placodermi / Dunkleosteidae|Ikan berpelindung dengan gigitan 6 ton.|paleo
-Anomalocaris|Anomalocaris|Kambrium|505 Juta TL|1 Jan 1892|J.F. Whiteaves|Kanada|Karnivora|Panjang 1 m|Dinocaridida / Anomalocarididae|Predator laut dengan 30.000 lensa mata.|paleo
-Meganeura|Meganeura|Karbon|305-299 Juta TL|1 Jan 1880|Charles Brongniart|Prancis|Karnivora|Bentang 75 cm|Insecta / Meganeuridae|Capung raksasa era oksigen tinggi.|paleo
-Arthropleura|Arthropleura|Karbon|340-280 Juta TL|1 Jan 1854|Jordan & Meyer|Skotlandia|Herbivora|Panjang 2,5 m|Myriapoda / Arthropleuridae|Arthropoda darat terbesar sepanjang sejarah.|paleo
-Hallucigenia|Hallucigenia|Kambrium|508 Juta TL|1 Jan 1911|Charles Walcott|Kanada|Detritivora|Panjang 3 cm|Lobopodia / Hallucigeniidae|Cacing Kambrium yang sangat aneh.|paleo
-Opabinia|Opabinia|Kambrium|505 Juta TL|1 Jan 1912|Charles Walcott|Kanada|Detritivora|Panjang 7 cm|Dinocaridida / Opabiniidae|Makhluk dengan lima mata dan belalai.|paleo
-Tullimonstrum|Tullimonstrum|Karbon|307 Juta TL|1 Jan 1955|Francis Tully|Illinois, AS|Karnivora|Panjang 35 cm|Incertae sedis|Monster Tully yang misterius.|paleo
-Titanichthys|Titanichthys|Devon|380 Juta TL|1 Jan 1885|John S. Newberry|Maroko & AS|Planktonivora|Panjang 6 m|Placodermi / Arthrodira|Ikan pelindung penyaring plankton.|paleo
-Pterygotus|Pterygotus|Silur|428-391 Juta TL|1 Jan 1844|Louis Agassiz|Skotlandia & AS|Karnivora|Panjang 2,5 m|Eurypterida / Pterygotidae|Kalajengking laut raksasa.|paleo
-Cameroceras|Cameroceras|Ordovisium|470-443 Juta TL|1 Jan 1842|James Hall|AS & Eropa|Karnivora|Panjang 9 m|Cephalopoda / Endocerida|Moluska bercangkang lurus raksasa.|paleo
-Ophiacodon|Ophiacodon|Permian|300-280 Juta TL|1 Jan 1878|Othniel C. Marsh|Texas & New Mexico|Karnivora|Panjang 3 m|Synapsida / Ophiacodontidae|Synapsida besar berkerabat dengan mamalia.|paleo
-Diplocaulus|Diplocaulus|Permian|270 Juta TL|1 Jan 1877|Edward D. Cope|Texas & Maroko|Karnivora|Panjang 1 m|Amphibia / Diplocaulidae|Amfibi berkepala bumerang.|paleo
-Helicoprion|Helicoprion|Permian|290 Juta TL|1 Jan 1899|Alexander Karpinsky|Idaho & Rusia|Karnivora|Panjang 4 m|Chondrichthyes / Helicoprionidae|Hiu purba dengan gigi spiral.|paleo
-Jaekelopterus|Jaekelopterus|Devon|390 Juta TL|1 Jan 1914|Otto Jaekel|Jerman|Karnivora|Panjang 2,5 m|Eurypterida / Pterygotidae|Kalajengking laut terbesar.|paleo
-Coelophysis|Coelophysis|Trias Akhir|216-203 Juta TL|1 Agu 1881|Edward D. Cope|New Mexico, AS|Karnivora|Panjang 3 m|Dinosauria / Coelophysidae|Karnivora ramping hidup berkelompok.|trias
-Plateosaurus|Plateosaurus|Trias Akhir|214-204 Juta TL|1 Jan 1834|J.F. Engelhardt|Jerman|Herbivora|Panjang 8 m|Dinosauria / Plateosauridae|Herbivora raksasa pertama Eropa.|trias
-Eoraptor|Eoraptor|Trias Akhir|231 Juta TL|1 Jan 1991|Ricardo Martinez|Argentina|Karnivora|Panjang 1 m|Dinosauria / Eoraptoridae|Dinosaurus tertua sebesar kucing.|trias
-Herrerasaurus|Herrerasaurus|Trias Akhir|231 Juta TL|1 Jan 1959|Osvaldo Reig|Argentina|Karnivora|Panjang 6 m|Dinosauria / Herrerasauridae|Predator puncak Trias Argentina.|trias
-Procompsognathus|Procompsognathus|Trias Akhir|210 Juta TL|1 Jan 1913|Eberhard Fraas|Jerman|Karnivora|Panjang 1 m|Dinosauria / Coelophysidae|Pelari cepat pemakan serangga.|trias
-Liliensternus|Liliensternus|Trias Akhir|228-201 Juta TL|1 Jan 1934|Friedrich von Huene|Jerman|Karnivora|Panjang 5 m|Dinosauria / Coelophysidae|Karnivora Trias dengan jambul.|trias
-Postosuchus|Postosuchus|Trias Akhir|221-203 Juta TL|1 Jan 1985|Sankar Chatterjee|Texas, AS|Karnivora|Panjang 6 m|Archosauria / Rauisuchidae|Reptil raksasa sebelum dinosaurus.|trias
-Nothosaurus|Nothosaurus|Trias|240-210 Juta TL|1 Jan 1834|Georg zu Munster|Jerman & Israel|Karnivora|Panjang 4 m|Sauropterygia / Nothosauridae|Reptil laut semi-akuatik.|trias
-Cymbospondylus|Cymbospondylus|Trias|240-210 Juta TL|1 Jan 1868|Joseph Leidy|Nevada, AS|Karnivora|Panjang 10 m|Ichthyosauria / Cymbospondylidae|Ichthyosaurus raksasa Nevada.|trias
-Shonisaurus|Shonisaurus|Trias Akhir|215 Juta TL|1 Jan 1928|Charles Camp|Nevada, AS|Karnivora|Panjang 15 m|Ichthyosauria / Shastasauridae|Ichthyosaurus raksasa - fosil resmi Nevada.|trias
-Eudimorphodon|Eudimorphodon|Trias Akhir|210 Juta TL|1 Jan 1973|Rocco Zambelli|Italia|Piscivora|Bentang 1 m|Pterosauria / Eudimorphodontidae|Pterosaurus tertua dengan gigi beragam.|trias
-Peteinosaurus|Peteinosaurus|Trias Akhir|221-210 Juta TL|1 Jan 1978|Rupert Wild|Italia|Serangga|Bentang 60 cm|Pterosauria / Dimorphodontidae|Salah satu pterosaurus tertua.|trias
-Placerias|Placerias|Trias Akhir|220-215 Juta TL|1 Jan 1904|Lucas|Arizona, AS|Herbivora|Panjang 3,5 m|Dicynodontia / Kannemeyeriidae|Dicynodont bertaring besar.|trias
-Desmatosuchus|Desmatosuchus|Trias Akhir|230-210 Juta TL|1 Jan 1920|E.C. Case|Texas, AS|Herbivora|Panjang 5 m|Aetosauria / Stagonolepididae|Reptil berarmor dengan ekor berduri.|trias
-Rutiodon|Rutiodon|Trias Akhir|230 Juta TL|1 Jan 1856|Ebenezer Emmons|New Jersey, AS|Karnivora|Panjang 3 m|Phytosauria / Parasuchidae|Phytosaurus mirip buaya modern.|trias
-Brachiosaurus|Brachiosaurus|Juras Akhir|154-153 Juta TL|4 Jul 1903|Elmer Riggs|Colorado, AS|Herbivora|Panjang 26 m, tinggi 12 m|Dinosauria / Brachiosauridae|Leher 9 meter mencapai pucuk pohon.|juras
-Diplodocus|Diplodocus|Juras Akhir|154-152 Juta TL|1 Jul 1877|S.W. Williston|Colorado, AS|Herbivora|Panjang 27 m|Dinosauria / Diplodocidae|Dinosaurus terpanjang. Ekor seperti cambuk.|juras
-Apatosaurus|Apatosaurus|Juras Akhir|152-151 Juta TL|1 Jan 1877|Othniel C. Marsh|Colorado & Wyoming|Herbivora|Panjang 21 m|Dinosauria / Diplodocidae|Dulu dikenal sebagai Brontosaurus.|juras
-Stegosaurus|Stegosaurus|Juras Akhir|155-150 Juta TL|1 Apr 1877|Othniel C. Marsh|Colorado & Wyoming|Herbivora|Panjang 9 m|Dinosauria / Stegosauridae|Benteng berjalan dengan ekor berduri.|juras
-Allosaurus|Allosaurus|Juras Akhir|155-145 Juta TL|1 Jan 1869|Othniel C. Marsh|Utah, AS|Karnivora|Panjang 12 m|Dinosauria / Allosauridae|Predator puncak Juras.|juras
-Dilophosaurus|Dilophosaurus|Juras Awal|193 Juta TL|1 Jan 1942|Samuel Welles|Arizona, AS|Karnivora|Panjang 6 m|Dinosauria / Dilophosauridae|Karnivora berjambul, bukan beracun.|juras
-Archaeopteryx|Archaeopteryx|Juras Akhir|150 Juta TL|15 Agu 1861|Hermann von Meyer|Jerman|Karnivora|Panjang 50 cm|Aves / Archaeopterygidae|Mata rantai dinosaurus-burung.|juras
-Compsognathus|Compsognathus|Juras Akhir|150 Juta TL|1 Jan 1859|Johann A. Wagner|Jerman & Prancis|Karnivora|Panjang 1 m|Dinosauria / Compsognathidae|Dinosaurus seukuran ayam.|juras
-Ceratosaurus|Ceratosaurus|Juras Akhir|153-148 Juta TL|1 Jan 1884|Othniel C. Marsh|Colorado & Utah|Karnivora|Panjang 6 m|Dinosauria / Ceratosauridae|Karnivora dengan tanduk di hidung.|juras
-Megalosaurus|Megalosaurus|Juras Tengah|166 Juta TL|1 Jan 1824|William Buckland|Inggris|Karnivora|Panjang 6 m|Dinosauria / Megalosauridae|Dinosaurus pertama yang diberi nama.|juras
-Ichthyosaurus|Ichthyosaurus|Juras Awal|201-194 Juta TL|1 Jan 1811|Mary Anning|Inggris|Karnivora|Panjang 3 m|Ichthyosauria / Ichthyosauridae|Reptil laut mirip lumba-lumba.|juras
-Plesiosaurus|Plesiosaurus|Juras Awal|199-175 Juta TL|1 Jan 1821|Mary Anning|Inggris|Karnivora|Panjang 3,5 m|Sauropterygia / Plesiosauridae|Inspirasi mitos monster Loch Ness.|juras
-Dimorphodon|Dimorphodon|Juras Awal|195 Juta TL|1 Jan 1859|Richard Owen|Inggris|Karnivora|Bentang 1,5 m|Pterosauria / Dimorphodontidae|Pterosaurus dengan dua jenis gigi.|juras
-Rhamphorhynchus|Rhamphorhynchus|Juras Akhir|150 Juta TL|1 Jan 1831|Georg zu Munster|Jerman|Piscivora|Bentang 1,8 m|Pterosauria / Rhamphorhynchidae|Pterosaurus pemakan ikan.|juras
-Pterodactylus|Pterodactylus|Juras Akhir|150 Juta TL|1 Jan 1784|C.A. Collini|Jerman|Karnivora|Bentang 1 m|Pterosauria / Pterodactylidae|Pterosaurus pertama yang dinamai.|juras
-Kentrosaurus|Kentrosaurus|Juras Akhir|152 Juta TL|1 Jan 1915|Edwin Hennig|Tanzania|Herbivora|Panjang 4,5 m|Dinosauria / Stegosauridae|Sepupu Afrika Ste
+/* Data: nama|wiki|periode|waktu|tanggal|penemu|lokasi|diet|ukuran|klasifikasi|era */
+var RAW = "Tyrannosaurus Rex|Tyrannosaurus|Kapur Akhir|68-66 JTL|10 Agu 1902|Barnum Brown|Montana, AS|Karnivora|12 m|Tyrannosauridae|kapur\n" +
+"Triceratops|Triceratops|Kapur Akhir|68-66 JTL|1 Okt 1887|Othniel C. Marsh|Colorado, AS|Herbivora|9 m|Ceratopsidae|kapur\n" +
+"Velociraptor|Velociraptor|Kapur Akhir|75-71 JTL|11 Agu 1923|Peter Kaisen|Mongolia|Karnivora|2 m|Dromaeosauridae|kapur\n" +
+"Spinosaurus|Spinosaurus|Kapur Akhir|99-93 JTL|11 Jan 1912|Ernst Stromer|Mesir|Karnivora|15 m|Spinosauridae|kapur\n" +
+"Giganotosaurus|Giganotosaurus|Kapur Akhir|99-95 JTL|1 Jan 1993|Ruben Carolini|Argentina|Karnivora|13 m|Carcharodontosauridae|kapur\n" +
+"Carnotaurus|Carnotaurus|Kapur Akhir|72-70 JTL|1 Jan 1985|Jose Bonaparte|Argentina|Karnivora|8 m|Abelisauridae|kapur\n" +
+"Ankylosaurus|Ankylosaurus|Kapur Akhir|68-66 JTL|1 Mei 1906|Barnum Brown|Montana, AS|Herbivora|9 m|Ankylosauridae|kapur\n" +
+"Parasaurolophus|Parasaurolophus|Kapur Akhir|76-73 JTL|1 Sep 1922|William Parks|Alberta, Kanada|Herbivora|10 m|Hadrosauridae|kapur\n" +
+"Iguanodon|Iguanodon|Kapur Awal|126-122 JTL|1 Jan 1822|Gideon Mantell|Inggris|Herbivora|10 m|Iguanodontidae|kapur\n" +
+"Deinonychus|Deinonychus|Kapur Awal|115-108 JTL|1 Jan 1931|Barnum Brown|Montana, AS|Karnivora|3,5 m|Dromaeosauridae|kapur\n" +
+"Therizinosaurus|Therizinosaurus|Kapur Akhir|70 JTL|1 Jan 1948|Rinchen Barsbold|Mongolia|Herbivora|10 m|Therizinosauridae|kapur\n" +
+"Oviraptor|Oviraptor|Kapur Akhir|75-71 JTL|1 Jan 1924|Roy C. Andrews|Mongolia|Omnivora|2 m|Oviraptoridae|kapur\n" +
+"Protoceratops|Protoceratops|Kapur Akhir|75-71 JTL|1 Jan 1923|Walter W. Granger|Mongolia|Herbivora|2 m|Ceratopsidae|kapur\n" +
+"Pteranodon|Pteranodon|Kapur Akhir|88-80 JTL|1 Jun 1876|Othniel C. Marsh|Kansas, AS|Piscivora|Bentang 7 m|Pteranodontidae|kapur\n" +
+"Mosasaurus|Mosasaurus|Kapur Akhir|82-66 JTL|1 Jan 1764|Maarten Houttuyn|Belanda|Karnivora|17 m|Mosasauridae|kapur\n" +
+"Argentinosaurus|Argentinosaurus|Kapur Akhir|96-92 JTL|1 Jan 1987|Guillermo Heredia|Argentina|Herbivora|35 m|Titanosauria|kapur\n" +
+"Utahraptor|Utahraptor|Kapur Awal|135-130 JTL|1 Jan 1991|James Kirkland|Utah, AS|Karnivora|7 m|Dromaeosauridae|kapur\n" +
+"Baryonyx|Baryonyx|Kapur Awal|130-125 JTL|1 Jan 1983|William Walker|Inggris|Piscivora|9 m|Spinosauridae|kapur\n" +
+"Carcharodontosaurus|Carcharodontosaurus|Kapur Akhir|100-93 JTL|1 Jan 1925|Charles Deperet|Maroko|Karnivora|13 m|Carcharodontosauridae|kapur\n" +
+"Maiasaura|Maiasaura|Kapur Akhir|80-75 JTL|1 Jan 1979|Jack Horner|Montana, AS|Herbivora|9 m|Hadrosauridae|kapur\n" +
+"Styracosaurus|Styracosaurus|Kapur Akhir|75-75 JTL|1 Jan 1913|Lawrence Lambe|Alberta, Kanada|Herbivora|5,5 m|Ceratopsidae|kapur\n" +
+"Gallimimus|Gallimimus|Kapur Akhir|70 JTL|1 Jan 1972|Rinchen Barsbold|Mongolia|Omnivora|6 m|Ornithomimidae|kapur\n" +
+"Troodon|Troodon|Kapur Akhir|77-74 JTL|1 Jan 1856|Joseph Leidy|Montana, AS|Omnivora|2,4 m|Troodontidae|kapur\n" +
+"Microraptor|Microraptor|Kapur Awal|120 JTL|1 Jan 2000|Xu Xing|Tiongkok|Karnivora|0,8 m|Dromaeosauridae|kapur\n" +
+"Yutyrannus|Yutyrannus|Kapur Awal|125 JTL|1 Jan 2012|Xu Xing|Tiongkok|Karnivora|9 m|Tyrannosauridae|kapur\n" +
+"Quetzalcoatlus|Quetzalcoatlus|Kapur Akhir|68-66 JTL|1 Jan 1971|Douglas Lawson|Texas, AS|Karnivora|Bentang 11 m|Azhdarchidae|kapur\n" +
+"Elasmosaurus|Elasmosaurus|Kapur Akhir|80,5 JTL|1 Jan 1867|Edward D. Cope|Kansas, AS|Piscivora|14 m|Elasmosauridae|kapur\n" +
+"Edmontosaurus|Edmontosaurus|Kapur Akhir|73-66 JTL|1 Jan 1892|Lawrence Lambe|Alberta, Kanada|Herbivora|12 m|Hadrosauridae|kapur\n" +
+"Tarbosaurus|Tarbosaurus|Kapur Akhir|70 JTL|1 Jan 1955|Evgeny Maleev|Mongolia|Karnivora|10 m|Tyrannosauridae|kapur\n" +
+"Brachiosaurus|Brachiosaurus|Juras Akhir|154-153 JTL|4 Jul 1903|Elmer Riggs|Colorado, AS|Herbivora|26 m|Brachiosauridae|juras\n" +
+"Diplodocus|Diplodocus|Juras Akhir|154-152 JTL|1 Jul 1877|S.W. Williston|Colorado, AS|Herbivora|27 m|Diplodocidae|juras\n" +
+"Apatosaurus|Apatosaurus|Juras Akhir|152-151 JTL|1 Jan 1877|Othniel C. Marsh|Colorado, AS|Herbivora|21 m|Diplodocidae|juras\n" +
+"Stegosaurus|Stegosaurus|Juras Akhir|155-150 JTL|1 Apr 1877|Othniel C. Marsh|Colorado, AS|Herbivora|9 m|Stegosauridae|juras\n" +
+"Allosaurus|Allosaurus|Juras Akhir|155-145 JTL|1 Jan 1869|Othniel C. Marsh|Utah, AS|Karnivora|12 m|Allosauridae|juras\n" +
+"Dilophosaurus|Dilophosaurus|Juras Awal|193 JTL|1 Jan 1942|Samuel Welles|Arizona, AS|Karnivora|6 m|Dilophosauridae|juras\n" +
+"Archaeopteryx|Archaeopteryx|Juras Akhir|150 JTL|15 Agu 1861|Hermann von Meyer|Jerman|Karnivora|0,5 m|Archaeopterygidae|juras\n" +
+"Compsognathus|Compsognathus|Juras Akhir|150 JTL|1 Jan 1859|Johann A. Wagner|Jerman|Karnivora|1 m|Compsognathidae|juras\n" +
+"Ceratosaurus|Ceratosaurus|Juras Akhir|153-148 JTL|1 Jan 1884|Othniel C. Marsh|Colorado, AS|Karnivora|6 m|Ceratosauridae|juras\n" +
+"Megalosaurus|Megalosaurus|Juras Tengah|166 JTL|1 Jan 1824|William Buckland|Inggris|Karnivora|6 m|Megalosauridae|juras\n" +
+"Ichthyosaurus|Ichthyosaurus|Juras Awal|201-194 JTL|1 Jan 1811|Mary Anning|Inggris|Karnivora|3 m|Ichthyosauridae|juras\n" +
+"Plesiosaurus|Plesiosaurus|Juras Awal|199-175 JTL|1 Jan 1821|Mary Anning|Inggris|Karnivora|3,5 m|Plesiosauridae|juras\n" +
+"Dimorphodon|Dimorphodon|Juras Awal|195 JTL|1 Jan 1859|Richard Owen|Inggris|Karnivora|Bentang 1,5 m|Dimorphodontidae|juras\n" +
+"Rhamphorhynchus|Rhamphorhynchus|Juras Akhir|150 JTL|1 Jan 1831|Georg zu Munster|Jerman|Piscivora|Bentang 1,8 m|Rhamphorhynchidae|juras\n" +
+"Coelophysis|Coelophysis|Trias Akhir|216-203 JTL|1 Agu 1881|Edward D. Cope|New Mexico, AS|Karnivora|3 m|Coelophysidae|trias\n" +
+"Plateosaurus|Plateosaurus|Trias Akhir|214-204 JTL|1 Jan 1834|J.F. Engelhardt|Jerman|Herbivora|8 m|Plateosauridae|trias\n" +
+"Eoraptor|Eoraptor|Trias Akhir|231 JTL|1 Jan 1991|Ricardo Martinez|Argentina|Karnivora|1 m|Eoraptoridae|trias\n" +
+"Herrerasaurus|Herrerasaurus|Trias Akhir|231 JTL|1 Jan 1959|Osvaldo Reig|Argentina|Karnivora|6 m|Herrerasauridae|trias\n" +
+"Dimetrodon|Dimetrodon|Permian|295-272 JTL|1 Jan 1878|Edward D. Cope|Texas, AS|Karnivora|3 m|Sphenacodontidae|paleo\n" +
+"Dunkleosteus|Dunkleosteus|Devon|382-358 JTL|1 Jan 1873|David Dunkle|Ohio, AS|Karnivora|8 m|Dunkleosteidae|paleo\n" +
+"Anomalocaris|Anomalocaris|Kambrium|505 JTL|1 Jan 1892|J.F. Whiteaves|Kanada|Karnivora|1 m|Anomalocarididae|paleo\n" +
+"Meganeura|Meganeura|Karbon|305-299 JTL|1 Jan 1880|Charles Brongniart|Prancis|Karnivora|Bentang 75 cm|Meganeuridae|paleo\n" +
+"Megalodon|Megalodon|Miosen-Pliosen|23-3,6 JTL|1 Jan 1835|Louis Agassiz|Seluruh dunia|Karnivora|18 m|Otodontidae|keno\n" +
+"Smilodon|Smilodon|Pleistosen|2,5 Juta-10.000 TL|1 Jan 1842|Peter W. Lund|Amerika|Karnivora|2,5 m|Felidae|keno\n" +
+"Woolly Mammoth|Woolly mammoth|Pleistosen|5 Juta-4.000 TL|1 Jan 1799|J.F. Blumenbach|Eurasia|Herbivora|Tinggi 3,5 m|Elephantidae|keno\n" +
+"Titanoboa|Titanoboa|Paleosen|60-58 JTL|1 Feb 2009|Carlos Jaramillo|Kolombia|Karnivora|13 m|Boidae|keno\n" +
+"Paraceratherium|Paraceratherium|Oligosen|34-23 JTL|1 Jan 1910|Guy E. Pilgrim|Asia|Herbivora|Tinggi 5 m|Paraceratheriidae|keno\n" +
+"Woolly Rhinoceros|Woolly rhinoceros|Pleistosen|3,6 Juta-10.000 TL|1 Jan 1764|J.F. Blumenbach|Eurasia|Herbivora|3,8 m|Rhinocerotidae|keno";
+
+/* Parse */
+var D = RAW.split("\n").map(function(l){
+  var p = l.split("|");
+  return {nama:p[0], wiki:p[1], per:p[2], waktu:p[3], tgl:p[4], pen:p[5], lok:p[6], diet:p[7], ukuran:p[8], klas:p[9], era:p[10]};
+});
+
+function emojiFor(n){
+  n = n.toLowerCase();
+  if(/tyranno|gigano|carchar|utahraptor|yutyrannus|herrerasaur|dilopho|carnotaur|spinosaurus|baryonyx|deinonychus|velociraptor|tarbosaurus|megalosaurus|ceratosaurus|allosaurus/.test(n)) return "🦖";
+  if(/brachio|diplod|apatos|argentin|plateosaur|parasaurolophus|iguanodon|maiasaura|therizino|edmonto/.test(n)) return "🦕";
+  if(/pteranodon|rhampho|dimorpho|quetzal|archaeopt|microraptor/.test(n)) return "🦅";
+  if(/mosasaur|titanoboa|elasmosaurus|plesiosaur|ichthyo/.test(n)) return "🐊";
+  if(/mammoth|paraceratherium/.test(n)) return "🦣";
+  if(/rhino/.test(n)) return "🦏";
+  if(/smilodon/.test(n)) return "🐯";
+  if(/megalodon/.test(n)) return "🦈";
+  if(/meganeura/.test(n)) return "🦟";
+  if(/anomalocaris/.test(n)) return "🦐";
+  if(/dunkleosteus/.test(n)) return "🐟";
+  if(/dimetrodon/.test(n)) return "🦎";
+  return "🦴";
+}
+
+var grid = document.getElementById("grid");
+var cn = document.getElementById("cn");
+var ct = document.getElementById("ct");
+var searchInput = document.getElementById("search");
+var filterBtns = document.querySelectorAll(".fbtn");
+var activeEra = "all", searchQuery = "", wikiCache = {};
+
+document.getElementById("sTotal").textContent = D.length;
+ct.textContent = D.length;
+
+function wikiFetch(title, cb){
+  if(!title){cb(null);return}
+  if(wikiCache[title] !== undefined){cb(wikiCache[title]);return}
+  fetch("https://en.wikipedia.org/api/rest_v1/page/summary/" + encodeURIComponent(title))
+    .then(function(r){return r.ok ? r.json() : null})
+    .then(function(data){
+      if(data){
+        var result = {extract: data.extract || "", url: ""};
+        if(data.thumbnail && data.thumbnail.source){
+          result.url = data.thumbnail.source.replace(/\/\d+px-/, "/600px-");
+        }
+        wikiCache[title] = result;
+        cb(result);
+      } else { wikiCache[title] = null; cb(null); }
+    })
+    .catch(function(){ wikiCache[title] = null; cb(null); });
+}
+
+/* Render kartu */
+D.forEach(function(d, i){
+  var c = document.createElement("article");
+  c.className = "card";
+  c.dataset.era = d.era;
+  c.dataset.nama = d.nama.toLowerCase();
+  c.innerHTML = '<div class="cmedia ' + d.era + '"><span class="emoji">' + emojiFor(d.nama) + '</span><img alt="' + d.nama + '" loading="lazy"></div>' +
+    '<div class="cinfo"><span class="badge">' + d.per + '</span><h3>' + d.nama + '</h3><p class="ctime">⏳ ' + d.waktu + '</p></div>';
+  c.addEventListener("click", function(){ openModal(d); });
+  grid.appendChild(c);
+  setTimeout(function(){
+    var img = c.querySelector("img");
+    wikiFetch(d.wiki, function(data){
+      if(data && data.url){
+        img.onload = function(){ img.classList.add("loaded"); };
+        img.src = data.url;
+      }
+    });
+  }, i * 60);
+});
+
+function applyFilter(){
+  var cards = grid.querySelectorAll(".card"), v = 0;
+  cards.forEach(function(c){
+    var mE = activeEra === "all" || c.dataset.era === activeEra;
+    var mS = c.dataset.nama.indexOf(searchQuery) !== -1;
+    if(mE && mS){ c.style.display = ""; v++; } else c.style.display = "none";
+  });
+  cn.textContent = v;
+}
+
+filterBtns.forEach(function(b){
+  b.addEventListener("click", function(){
+    filterBtns.forEach(function(x){ x.classList.remove("active"); });
+    b.classList.add("active");
+    activeEra = b.dataset.era;
+    applyFilter();
+  });
+});
+
+searchInput.addEventListener("input", function(e){
+  searchQuery = e.target.value.toLowerCase().trim();
+  applyFilter();
+});
+
+var modal = document.getElementById("modal");
+
+function openModal(d){
+  var mImg = document.getElementById("mimg");
+  mImg.classList.remove("loaded");
+  mImg.removeAttribute("src");
+  document.getElementById("memoji").textContent = emojiFor(d.nama);
+  document.getElementById("mnam").textContent = d.nama;
+  document.getElementById("msci").textContent = d.klas;
+  document.getElementById("mwaktu").textContent = d.waktu + " (" + d.per + ")";
+  document.getElementById("mtgl").textContent = d.tgl;
+  document.getElementById("mpen").textContent = d.pen;
+  document.getElementById("mlok").textContent = d.lok;
+  document.getElementById("mdiet").textContent = d.diet;
+  document.getElementById("mukuran").textContent = d.ukuran;
+  document.getElementById("mdesc").textContent = "Memuat dari Wikipedia...";
+  document.getElementById("mwiki").href = "https://en.wikipedia.org/wiki/" + encodeURIComponent(d.wiki);
+  modal.classList.add("open");
+  
+  function apply(data){
+    if(data && data.extract){
+      document.getElementById("mdesc").textContent = data.extract;
+    } else {
+      document.getElementById("mdesc").textContent = "Deskripsi tidak tersedia.";
+    }
+    if(data && data.url){
+      mImg.onload = function(){ mImg.classList.add("loaded"); };
+      mImg.src = data.url;
+    }
+  }
+  if(wikiCache[d.wiki]) apply(wikiCache[d.wiki]);
+  else wikiFetch(d.wiki, apply);
+  
+  playSound(d.era);
+}
+
+function closeModal(){
+  modal.classList.remove("open");
+}
+
+document.addEventListener("keydown", function(e){
+  if(e.key === "Escape") closeModal();
+});
+
+/* Suara Web Audio */
+var ac = null;
+function getCtx(){
+  if(!ac){
+    var A = window.AudioContext || window.webkitAudioContext;
+    if(!A) return null;
+    ac = new A();
+  }
+  if(ac.state === "suspended") ac.resume();
+  return ac;
+}
+
+function playSound(era){
+  var c = getCtx();
+  if(!c) return;
+  var t = c.currentTime;
+  
+  function tone(w, f0, f1, du, v, dl){
+    dl = dl || 0;
+    var o = c.createOscillator(), g = c.createGain(), fl = c.createBiquadFilter();
+    o.type = w;
+    o.frequency.setValueAtTime(f0, t + dl);
+    o.frequency.exponentialRampToValueAtTime(Math.max(f1, 1), t + dl + du);
+    fl.type = "lowpass";
+    fl.frequency.setValueAtTime(1400, t + dl);
+    fl.frequency.exponentialRampToValueAtTime(400, t + dl + du);
+    g.gain.setValueAtTime(.0001, t + dl);
+    g.gain.exponentialRampToValueAtTime(v, t + dl + .05);
+    g.gain.exponentialRampToValueAtTime(.0001, t + dl + du);
+    o.connect(fl).connect(g).connect(c.destination);
+    o.start(t + dl);
+    o.stop(t + dl + du + .05);
+  }
+  
+  function noise(du, v, fq, dl){
+    dl = dl || 0;
+    var l = Math.floor(c.sampleRate * du);
+    var b = c.createBuffer(1, l, c.sampleRate);
+    var dt = b.getChannelData(0);
+    for(var i = 0; i < l; i++) dt[i] = Math.random() * 2 - 1;
+    var s = c.createBufferSource();
+    s.buffer = b;
+    var fl = c.createBiquadFilter();
+    fl.type = "lowpass";
+    fl.frequency.value = fq;
+    var g = c.createGain();
+    g.gain.setValueAtTime(v, t + dl);
+    g.gain.exponentialRampToValueAtTime(.0001, t + dl + du);
+    s.connect(fl).connect(g).connect(c.destination);
+    s.start(t + dl);
+    s.stop(t + dl + du);
+  }
+  
+  if(era === "paleo"){ tone("sawtooth", 90, 30, 1.4, .28, 0); tone("square", 45, 20, 1.2, .12, .1); noise(1, .15, 250, 0); }
+  else if(era === "trias"){ tone("sawtooth", 800, 300, .35, .18, 0); noise(.4, .1, 800, 0); }
+  else if(era === "juras"){ tone("triangle", 130, 80, 1.5, .32, 0); noise(1.1, .06, 400, 0); }
+  else if(era === "kapur"){ tone("sawtooth", 200, 45, 1.1, .32, 0); noise(.9, .16, 300, 0); }
+  else if(era === "keno"){ tone("sine", 110, 30, .5, .45, 0); noise(.25, .2, 200, 0); }
+}
+
+console.log("✅ Ekspedisi siap! Total makhluk: " + D.length);
+</script>
+</body>
+</html>
