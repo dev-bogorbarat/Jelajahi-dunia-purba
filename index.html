@@ -386,6 +386,106 @@ function playSound(era){
 }
 
 console.log("✅ Ekspedisi siap! Total makhluk: " + D.length);
+</script><!-- ===== TOMBOL DONASI SAWERIA ===== -->
+<button class="donate-fab" id="donateBtn" aria-label="Dukung proyek ini">
+  <span class="donate-icon">☕</span>
+  <span class="donate-text">Dukung</span>
+</button>
+
+<div class="donate-modal" id="donateModal" aria-hidden="true">
+  <div class="donate-backdrop" onclick="closeDonate()"></div>
+  <div class="donate-box">
+    <button class="donate-close" onclick="closeDonate()" aria-label="Tutup">×</button>
+    
+    <div class="donate-header">
+      <div class="donate-cup">☕</div>
+      <h3>Dukung Ekspedisi Ini</h3>
+      <p>Proyek ini dibuat gratis untuk belajar. Kalau bermanfaat, traktir saya kopi agar semangat terus!</p>
+    </div>
+
+    <a class="donate-option" href="https://saweria.co/USERNAME_ANDA" target="_blank" rel="noopener">
+      <span class="opt-icon">🎁</span>
+      <div class="opt-info">
+        <strong>Saweria</strong>
+        <span>QRIS, Dana, OVO, GoPay, Bank</span>
+      </div>
+      <span class="opt-arrow">→</span>
+    </a>
+
+    <div class="donate-footer">
+      <p>💛 Terima kasih sudah mendukung!</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var btn = document.getElementById('donateBtn');
+  var modal = document.getElementById('donateModal');
+  btn.addEventListener('click', function(){
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  });
+  window.closeDonate = function(){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('open')) closeDonate();
+  });
+})();
+</script><!-- ===== TOMBOL DONASI SAWERIA ===== -->
+<button class="donate-fab" id="donateBtn" aria-label="Dukung proyek ini">
+  <span class="donate-icon">☕</span>
+  <span class="donate-text">Dukung</span>
+</button>
+
+<div class="donate-modal" id="donateModal" aria-hidden="true">
+  <div class="donate-backdrop" onclick="closeDonate()"></div>
+  <div class="donate-box">
+    <button class="donate-close" onclick="closeDonate()" aria-label="Tutup">×</button>
+    
+    <div class="donate-header">
+      <div class="donate-cup">☕</div>
+      <h3>Dukung Ekspedisi Ini</h3>
+      <p>Proyek ini dibuat gratis untuk belajar. Kalau bermanfaat, traktir saya kopi agar semangat terus!</p>
+    </div>
+
+    <a class="donate-option" href="https://saweria.co/USERNAME_ANDA" target="_blank" rel="noopener">
+      <span class="opt-icon">🎁</span>
+      <div class="opt-info">
+        <strong>Saweria</strong>
+        <span>QRIS, Dana, OVO, GoPay, Bank</span>
+      </div>
+      <span class="opt-arrow">→</span>
+    </a>
+
+    <div class="donate-footer">
+      <p>💛 Terima kasih sudah mendukung!</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var btn = document.getElementById('donateBtn');
+  var modal = document.getElementById('donateModal');
+  btn.addEventListener('click', function(){
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  });
+  window.closeDonate = function(){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('open')) closeDonate();
+  });
+})();
 </script>
 </body>
 </html>
