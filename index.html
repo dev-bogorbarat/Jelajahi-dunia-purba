@@ -3,13 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ekspedisi Dunia Purba — Arsip Lengkap</title>
+<title>Ekspedisi Dunia Purba</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Courier+Prime&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Courier Prime',monospace;background:#1c130d;color:#ece0cb;line-height:1.6;min-height:100vh;
-background-image:radial-gradient(circle at 15% 10%,rgba(61,107,69,.28),transparent 45%),radial-gradient(circle at 85% 80%,rgba(138,106,69,.25),transparent 50%),linear-gradient(160deg,#1c130d,#241811 55%,#120c08)}
-.hero{min-height:75vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 20px 50px;background:radial-gradient(ellipse at 50% 0%,rgba(255,155,33,.16),transparent 60%)}
+body{font-family:'Courier Prime',monospace;background:#1c130d;color:#ece0cb;line-height:1.6;min-height:100vh;background-image:radial-gradient(circle at 15% 10%,rgba(61,107,69,.28),transparent 45%),radial-gradient(circle at 85% 80%,rgba(138,106,69,.25),transparent 50%),linear-gradient(160deg,#1c130d,#241811 55%,#120c08)}
+.hero{min-height:60vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 20px 40px;background:radial-gradient(ellipse at 50% 0%,rgba(255,155,33,.16),transparent 60%)}
 .kicker{font-size:.72rem;letter-spacing:.45em;color:#ffc861;text-transform:uppercase;margin-bottom:20px}
 h1{font-family:'Cinzel',serif;font-weight:900;font-size:clamp(2.2rem,8vw,4rem);line-height:1.02;color:#ece0cb;text-shadow:0 3px 0 #000,0 0 40px rgba(255,155,33,.4);margin-bottom:20px}
 h1::after{content:"";display:block;width:130px;height:3px;margin:22px auto 0;background:linear-gradient(90deg,transparent,#ff9b21,transparent)}
@@ -19,7 +18,7 @@ h1::after{content:"";display:block;width:130px;height:3px;margin:22px auto 0;bac
 .stat b{font-family:'Cinzel',serif;font-size:1.6rem;color:#ff9b21;line-height:1}
 .stat span{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:#8f8d82;margin-top:4px}
 .btn{display:inline-block;padding:14px 32px;font-family:'Cinzel',serif;font-weight:700;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:#1c130d;background:linear-gradient(180deg,#ffc861,#ff9b21);border:2px solid #000;border-radius:4px;box-shadow:0 6px 0 #7a3f00}
-.galeri{padding:50px 16px 80px;max-width:1320px;margin:0 auto}
+.galeri{padding:40px 16px 70px;max-width:1320px;margin:0 auto}
 h2{font-family:'Cinzel',serif;font-size:clamp(1.4rem,5vw,2.1rem);text-align:center;margin-bottom:10px}
 h2::before,h2::after{content:"◆";color:#ff9b21;font-size:.6em;margin:0 14px}
 .sectionsub{text-align:center;color:#8f8d82;font-size:.85rem;margin-bottom:28px}
@@ -55,7 +54,7 @@ h2::before,h2::after{content:"◆";color:#ff9b21;font-size:.6em;margin:0 14px}
 .modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:20px;z-index:1000;opacity:0;visibility:hidden;transition:.3s}
 .modal.open{opacity:1;visibility:visible}
 .mback{position:absolute;inset:0;background:rgba(8,5,3,.85);backdrop-filter:blur(6px)}
-.mbox{position:relative;width:min(760px,100%);max-height:92vh;overflow-y:auto;background:linear-gradient(170deg,#2e2015,#1c130d);border:1px solid #8a6a45;border-top:4px solid #ff9b21;border-radius:14px;transform:translateY(28px);transition:.35s;box-shadow:0 30px 70px rgba(0,0,0,.8)}
+.mbox{position:relative;width:min(720px,100%);max-height:92vh;overflow-y:auto;background:linear-gradient(170deg,#2e2015,#1c130d);border:1px solid #8a6a45;border-top:4px solid #ff9b21;border-radius:14px;transform:translateY(28px);transition:.35s;box-shadow:0 30px 70px rgba(0,0,0,.8)}
 .modal.open .mbox{transform:translateY(0)}
 .mclose{position:absolute;top:12px;right:12px;width:36px;height:36px;font-size:1.3rem;color:#ece0cb;background:rgba(28,19,13,.8);border:1px solid rgba(255,155,33,.5);border-radius:50%;z-index:5;cursor:pointer}
 .mclose:hover{background:#ff9b21;color:#1c130d}
@@ -73,14 +72,11 @@ h2::before,h2::after{content:"◆";color:#ff9b21;font-size:.6em;margin:0 14px}
 .meta strong{display:block;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:#8f8d82;margin-bottom:2px}
 .meta span:not(.ic){font-size:.88rem;color:#ffc861}
 .mdesc{font-size:.9rem;color:#b9a888;line-height:1.8;border-top:1px dashed rgba(138,106,69,.4);padding-top:16px;margin-top:16px}
-.mdesc strong{color:#ffc861}
 .wikilink{display:inline-block;margin-top:16px;padding:10px 18px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:#ff9b21;border:1px solid rgba(255,155,33,.5);border-radius:6px;text-decoration:none;background:rgba(255,155,33,.08)}
-.wikilink:hover{background:#ff9b21;color:#1c130d}
 .empty{text-align:center;padding:60px 20px;color:#b9a888}
-.loading{text-align:center;padding:40px;color:#8f8d82;font-size:.85rem;letter-spacing:.15em}
 @media(max-width:640px){
-.hero{min-height:70vh;padding:60px 18px 40px}
-.galeri{padding:40px 12px 60px}
+.hero{min-height:55vh;padding:50px 18px 30px}
+.galeri{padding:30px 12px 60px}
 .grid{grid-template-columns:1fr 1fr;gap:12px}
 .cinfo{padding:11px 10px 14px}
 .cinfo h3{font-size:.88rem}
@@ -98,13 +94,13 @@ h2::before,h2::after{content:"◆";color:#ff9b21;font-size:.6em;margin:0 14px}
 
 <header class="hero">
   <div>
-    <p class="kicker">✦ Arsip Lengkap Paleontologi ✦</p>
+    <p class="kicker">✦ Arsip Paleontologi ✦</p>
     <h1>Ekspedisi<br>Dunia Purba</h1>
-    <p class="sub">Jelajahi 200+ makhluk purba dari Paleozoikum hingga Zaman Es. Ketuk setiap kartu untuk membuka berkas lengkap dari Wikipedia.</p>
+    <p class="sub">Jelajahi makhluk purba dari Paleozoikum hingga Zaman Es. Ketuk setiap kartu untuk membuka berkas lengkap dari Wikipedia.</p>
     <div class="stat">
       <div><b id="sTotal">0</b><span>Makhluk</span></div>
       <div><b>500</b><span>Juta Tahun</span></div>
-      <div><b>6</b><span>Era</span></div>
+      <div><b>5</b><span>Era</span></div>
     </div>
     <a href="#galeri" class="btn">Mulai Ekspedisi ↓</a>
   </div>
@@ -161,46 +157,53 @@ h2::before,h2::after{content:"◆";color:#ff9b21;font-size:.6em;margin:0 14px}
 
 <script>
 /* ============================================================
-   DATA INTI — 200 MAKHLUK PURBA
-   Format: [nama, wikiTitle, periode, waktu, tanggal, penemu, lokasi, diet, ukuran, klasifikasi, deskripsi, era]
+   DATA RINGKAS - Format: nama|wiki|periode|waktu|tanggal|penemu|lokasi|diet|ukuran|klasifikasi|deskripsi|era
    ============================================================ */
-var D=[
-// ===== PALEOZOIKUM (20) =====
-["Dimetrodon","Dimetrodon","Permian","295–272 Juta TL","1 Jan 1878","Edward D. Cope","Texas, Amerika Serikat","Karnivora","Panjang 3 m","Synapsida / Sphenacodontidae","Layar punggung untuk mengatur suhu tubuh. Hidup JAUH sebelum dinosaurus dan lebih dekat kekerabatannya dengan mamalia.","paleo"],
-["Edaphosaurus","Edaphosaurus","Permian","300–280 Juta TL","1 Jan 1882","Edward D. Cope","Texas & Eropa","Herbivora","Panjang 3,5 m","Synapsida / Edaphosauridae","Herbivora awal dengan layar punggung. Giginya pipih untuk mengunyah tumbuhan keras.","paleo"],
-["Dunkleosteus","Dunkleosteus","Devon","382–358 Juta TL","1 Jan 1873","David Dunkle","Ohio, Amerika Serikat","Karnivora","Panjang 8 m","Placodermi / Dunkleosteidae","Ikan berpelindung tulang dengan gigitan 6 ton. Salah satu predator terkuat yang pernah hidup.","paleo"],
-["Anomalocaris","Anomalocaris","Kambrium","505 Juta TL","1 Jan 1892","J.F. Whiteaves","British Columbia, Kanada","Karnivora","Panjang 1 m","Dinocaridida / Anomalocarididae","Predator laut dengan 30.000 lensa mata — penglihatan terbaik di zamannya.","paleo"],
-["Meganeura","Meganeura","Karbon","305–299 Juta TL","1 Jan 1880","Charles Brongniart","Prancis","Karnivora","Bentang sayap 75 cm","Insecta / Meganeuridae","Capung raksasa. Hidup saat kadar oksigen bumi mencapai 35%.","paleo"],
-["Arthropleura","Arthropleura","Karbon","340–280 Juta TL","1 Jan 1854","Jordan & Meyer","Skotlandia","Herbivora","Panjang 2,5 m","Myriapoda / Arthropleuridae","Arthropoda darat terbesar sepanjang sejarah. Berkerabat dengan kaki seribu.","paleo"],
-["Hallucigenia","Hallucigenia","Kambrium","508 Juta TL","1 Jan 1911","Charles Walcott","British Columbia, Kanada","Detritivora","Panjang 3 cm","Lobopodia / Hallucigeniidae","Cacing Kambrium yang begitu aneh hingga namanya berarti 'halusinasi'.","paleo"],
-["Opabinia","Opabinia","Kambrium","505 Juta TL","1 Jan 1912","Charles Walcott","British Columbia, Kanada","Detritivora","Panjang 7 cm","Dinocaridida / Opabiniidae","Makhluk dengan lima mata dan belalai seperti gajah mini.","paleo"],
-["Tullimonstrum","Tullimonstrum","Karbon","307 Juta TL","1 Jan 1955","Francis Tully","Illinois, Amerika Serikat","Karnivora","Panjang 35 cm","Incertae sedis","Dijuluki 'Monster Tully'. Misteri terbesar paleontologi selama 60 tahun.","paleo"],
-["Titanichthys","Titanichthys","Devon","380 Juta TL","1 Jan 1885","John S. Newberry","Maroko & Amerika","Planktonivora","Panjang 6 m","Placodermi / Arthrodira","Ikan berpelindung raksasa penyaring plankton seperti paus.","paleo"],
-["Pterygotus","Pterygotus","Silur","428–391 Juta TL","1 Jan 1844","Louis Agassiz","Skotlandia & Amerika","Karnivora","Panjang 2,5 m","Eurypterida / Pterygotidae","Kalajengking laut raksasa — predator puncak laut Silur.","paleo"],
-["Cameroceras","Cameroceras","Ordovisium","470–443 Juta TL","1 Jan 1842","James Hall","Amerika & Eropa","Karnivora","Panjang 9 m","Cephalopoda / Endocerida","Moluska bercangkang lurus raksasa. Kerabat cumi-cumi modern.","paleo"],
-["Anomalocaris","Anomalocaris","Kambrium","505 Juta TL","1 Jan 1892","J.F. Whiteaves","Kanada","Karnivora","Panjang 1 m","Dinocaridida","Mata majemuk paling tajam di zamannya.","paleo"],
-["Ophiacodon","Ophiacodon","Permian","300–280 Juta TL","1 Jan 1878","Othniel C. Marsh","Texas & New Mexico","Karnivora","Panjang 3 m","Synapsida / Ophiacodontidae","Synapsida besar yang berkerabat dengan mamalia.","paleo"],
-["Diplocaulus","Diplocaulus","Permian","270 Juta TL","1 Jan 1877","Edward D. Cope","Texas & Maroko","Karnivora","Panjang 1 m","Amphibia / Diplocaulidae","Amfibi berkepala bumerang yang unik.","paleo"],
-["Helicoprion","Helicoprion","Permian","290 Juta TL","1 Jan 1899","Alexander Karpinsky","Idaho & Rusia","Karnivora","Panjang 4 m","Chondrichthyes / Helicoprionidae","Hiu purba dengan gigi spiral seperti gergaji bundar.","paleo"],
-["Jaekelopterus","Jaekelopterus","Devon","390 Juta TL","1 Jan 1914","Otto Jaekel","Jerman","Karnivora","Panjang 2,5 m","Eurypterida / Pterygotidae","Kalajengking laut terbesar yang pernah hidup.","paleo"],
-["Astraspis","Astraspis","Ordovisium","467–443 Juta TL","1 Jan 1892","Charles Walcott","Amerika & Bolivia","Detritivora","Panjang 20 cm","Agnatha / Astraspidida","Ikan tanpa rahang berpelindung bintang.","paleo"],
-["Megalograptus","Megalograptus","Ordovisium","460 Juta TL","1 Jan 1874","Edward O. Ulrich","Ohio, Amerika Serikat","Karnivora","Panjang 1 m","Eurypterida","Kalajengking laut dengan lengan berduri.","paleo"],
-["Anomalocaris canadensis","Anomalocaris","Kambrium","505 Juta TL","1 Jan 1892","Joseph F. Whiteaves","British Columbia","Karnivora","Panjang 1 m","Dinocaridida","Predator puncak laut Kambrium.","paleo"],
-
-// ===== TRIAS (20) =====
-["Coelophysis","Coelophysis","Trias Akhir","216–203 Juta TL","1 Agu 1881","Edward D. Cope","New Mexico, Amerika Serikat","Karnivora","Panjang 3 m","Dinosauria / Coelophysidae","Karnivora ramping, hidup berkelompok. Ratusan fosil di Ghost Ranch.","trias"],
-["Plateosaurus","Plateosaurus","Trias Akhir","214–204 Juta TL","1 Jan 1834","J.F. Engelhardt","Jerman","Herbivora","Panjang 8 m","Dinosauria / Plateosauridae","Herbivora raksasa pertama Eropa. 100+ individu ditemukan.","trias"],
-["Eoraptor","Eoraptor","Trias Akhir","231 Juta TL","1 Jan 1991","Ricardo Martínez","Argentina","Karnivora","Panjang 1 m","Dinosauria / Eoraptoridae","'Pencuri fajar' — salah satu dinosaurus tertua.","trias"],
-["Herrerasaurus","Herrerasaurus","Trias Akhir","231 Juta TL","1 Jan 1959","Osvaldo Reig","Argentina","Karnivora","Panjang 6 m","Dinosauria / Herrerasauridae","Predator puncak Trias Amerika Selatan.","trias"],
-["Procompsognathus","Procompsognathus","Trias Akhir","210 Juta TL","1 Jan 1913","Eberhard Fraas","Jerman","Karnivora","Panjang 1 m","Dinosauria / Coelophysidae","Pelari cepat pemakan serangga dan kadal kecil.","trias"],
-["Liliensternus","Liliensternus","Trias Akhir","228–201 Juta TL","1 Jan 1934","Friedrich von Huene","Jerman","Karnivora","Panjang 5 m","Dinosauria / Coelophysidae","Karnivora Trias dengan jambul di kepala.","trias"],
-["Postosuchus","Postosuchus","Trias Akhir","221–203 Juta TL","1 Jan 1985","Sankar Chatterjee","Texas, Amerika Serikat","Karnivora","Panjang 6 m","Archosauria / Rauisuchidae","Reptil raksasa sebelum dinosaurus.","trias"],
-["Nothosaurus","Nothosaurus","Trias","240–210 Juta TL","1 Jan 1834","Georg zu Münster","Jerman & Israel","Karnivora","Panjang 4 m","Sauropterygia / Nothosauridae","Reptil laut semi-akuatik dengan kaki berselaput.","trias"],
-["Cymbospondylus","Cymbospondylus","Trias","240–210 Juta TL","1 Jan 1868","Joseph Leidy","Nevada, Amerika Serikat","Karnivora","Panjang 10 m","Ichthyosauria / Cymbospondylidae","Ichthyosaurus raksasa dari Nevada.","trias"],
-["Shonisaurus","Shonisaurus","Trias Akhir","215 Juta TL","1 Jan 1928","Charles Camp","Nevada, Amerika Serikat","Karnivora","Panjang 15 m","Ichthyosauria / Shastasauridae","Ichthyosaurus raksasa — fosil resmi Nevada.","trias"],
-["Eudimorphodon","Eudimorphodon","Trias Akhir","210 Juta TL","1 Jan 1973","Rocco Zambelli","Italia","Piscivora","Bentang 1 m","Pterosauria / Eudimorphodontidae","Pterosaurus tertua dengan gigi beragam.","trias"],
-["Peteinosaurus","Peteinosaurus","Trias Akhir","221–210 Juta TL","1 Jan 1978","Rupert Wild","Italia","Serangga","Bentang 60 cm","Pterosauria / Dimorphodontidae","Salah satu pterosaurus tertua.","trias"],
-["Placerias","Placerias","Trias Akhir","220–215 Juta TL","1 Jan 1904","Lucas","Arizona, Amerika Serikat","Herbivora","Panjang 3,5 m","Dicynodontia / Kannemeyeriidae","Dicynodont bertaring besar.","trias"],
-["Desmatosuchus","Desmatosuchus","Trias Akhir","230–210 Juta TL","1 Jan 1920","E.C. Case","Texas, Amerika Serikat","Herbivora","Panjang 5 m","Aetosauria / Stagonolepididae","Reptil berarmor dengan ekor berduri.","trias"],
-["Rutiodon","Rutiodon","Trias Akhir","230 Juta TL","1 Jan 1856","Ebenezer Emmons","New Jersey, Amerika Serikat","Karnivora","Panjang 3 m","Phytosauria / Parasuchidae","Phytosaurus mirip buaya modern.","trias"],
-["Hyperodapedon","Hyperodapedon","Trias Akhir","237–227 Juta TL","1 Jan 1859","Thomas H. Huxley","India & Argentina","Herbiv
+var RAW=`
+Dimetrodon|Dimetrodon|Permian|295-272 Juta TL|1 Jan 1878|Edward D. Cope|Texas, AS|Karnivora|Panjang 3 m|Synapsida / Sphenacodontidae|Layar punggung untuk mengatur suhu tubuh. Hidup jauh sebelum dinosaurus.|paleo
+Edaphosaurus|Edaphosaurus|Permian|300-280 Juta TL|1 Jan 1882|Edward D. Cope|Texas & Eropa|Herbivora|Panjang 3,5 m|Synapsida / Edaphosauridae|Herbivora awal dengan layar punggung.|paleo
+Dunkleosteus|Dunkleosteus|Devon|382-358 Juta TL|1 Jan 1873|David Dunkle|Ohio, AS|Karnivora|Panjang 8 m|Placodermi / Dunkleosteidae|Ikan berpelindung dengan gigitan 6 ton.|paleo
+Anomalocaris|Anomalocaris|Kambrium|505 Juta TL|1 Jan 1892|J.F. Whiteaves|Kanada|Karnivora|Panjang 1 m|Dinocaridida / Anomalocarididae|Predator laut dengan 30.000 lensa mata.|paleo
+Meganeura|Meganeura|Karbon|305-299 Juta TL|1 Jan 1880|Charles Brongniart|Prancis|Karnivora|Bentang 75 cm|Insecta / Meganeuridae|Capung raksasa era oksigen tinggi.|paleo
+Arthropleura|Arthropleura|Karbon|340-280 Juta TL|1 Jan 1854|Jordan & Meyer|Skotlandia|Herbivora|Panjang 2,5 m|Myriapoda / Arthropleuridae|Arthropoda darat terbesar sepanjang sejarah.|paleo
+Hallucigenia|Hallucigenia|Kambrium|508 Juta TL|1 Jan 1911|Charles Walcott|Kanada|Detritivora|Panjang 3 cm|Lobopodia / Hallucigeniidae|Cacing Kambrium yang sangat aneh.|paleo
+Opabinia|Opabinia|Kambrium|505 Juta TL|1 Jan 1912|Charles Walcott|Kanada|Detritivora|Panjang 7 cm|Dinocaridida / Opabiniidae|Makhluk dengan lima mata dan belalai.|paleo
+Tullimonstrum|Tullimonstrum|Karbon|307 Juta TL|1 Jan 1955|Francis Tully|Illinois, AS|Karnivora|Panjang 35 cm|Incertae sedis|Monster Tully yang misterius.|paleo
+Titanichthys|Titanichthys|Devon|380 Juta TL|1 Jan 1885|John S. Newberry|Maroko & AS|Planktonivora|Panjang 6 m|Placodermi / Arthrodira|Ikan pelindung penyaring plankton.|paleo
+Pterygotus|Pterygotus|Silur|428-391 Juta TL|1 Jan 1844|Louis Agassiz|Skotlandia & AS|Karnivora|Panjang 2,5 m|Eurypterida / Pterygotidae|Kalajengking laut raksasa.|paleo
+Cameroceras|Cameroceras|Ordovisium|470-443 Juta TL|1 Jan 1842|James Hall|AS & Eropa|Karnivora|Panjang 9 m|Cephalopoda / Endocerida|Moluska bercangkang lurus raksasa.|paleo
+Ophiacodon|Ophiacodon|Permian|300-280 Juta TL|1 Jan 1878|Othniel C. Marsh|Texas & New Mexico|Karnivora|Panjang 3 m|Synapsida / Ophiacodontidae|Synapsida besar berkerabat dengan mamalia.|paleo
+Diplocaulus|Diplocaulus|Permian|270 Juta TL|1 Jan 1877|Edward D. Cope|Texas & Maroko|Karnivora|Panjang 1 m|Amphibia / Diplocaulidae|Amfibi berkepala bumerang.|paleo
+Helicoprion|Helicoprion|Permian|290 Juta TL|1 Jan 1899|Alexander Karpinsky|Idaho & Rusia|Karnivora|Panjang 4 m|Chondrichthyes / Helicoprionidae|Hiu purba dengan gigi spiral.|paleo
+Jaekelopterus|Jaekelopterus|Devon|390 Juta TL|1 Jan 1914|Otto Jaekel|Jerman|Karnivora|Panjang 2,5 m|Eurypterida / Pterygotidae|Kalajengking laut terbesar.|paleo
+Coelophysis|Coelophysis|Trias Akhir|216-203 Juta TL|1 Agu 1881|Edward D. Cope|New Mexico, AS|Karnivora|Panjang 3 m|Dinosauria / Coelophysidae|Karnivora ramping hidup berkelompok.|trias
+Plateosaurus|Plateosaurus|Trias Akhir|214-204 Juta TL|1 Jan 1834|J.F. Engelhardt|Jerman|Herbivora|Panjang 8 m|Dinosauria / Plateosauridae|Herbivora raksasa pertama Eropa.|trias
+Eoraptor|Eoraptor|Trias Akhir|231 Juta TL|1 Jan 1991|Ricardo Martinez|Argentina|Karnivora|Panjang 1 m|Dinosauria / Eoraptoridae|Dinosaurus tertua sebesar kucing.|trias
+Herrerasaurus|Herrerasaurus|Trias Akhir|231 Juta TL|1 Jan 1959|Osvaldo Reig|Argentina|Karnivora|Panjang 6 m|Dinosauria / Herrerasauridae|Predator puncak Trias Argentina.|trias
+Procompsognathus|Procompsognathus|Trias Akhir|210 Juta TL|1 Jan 1913|Eberhard Fraas|Jerman|Karnivora|Panjang 1 m|Dinosauria / Coelophysidae|Pelari cepat pemakan serangga.|trias
+Liliensternus|Liliensternus|Trias Akhir|228-201 Juta TL|1 Jan 1934|Friedrich von Huene|Jerman|Karnivora|Panjang 5 m|Dinosauria / Coelophysidae|Karnivora Trias dengan jambul.|trias
+Postosuchus|Postosuchus|Trias Akhir|221-203 Juta TL|1 Jan 1985|Sankar Chatterjee|Texas, AS|Karnivora|Panjang 6 m|Archosauria / Rauisuchidae|Reptil raksasa sebelum dinosaurus.|trias
+Nothosaurus|Nothosaurus|Trias|240-210 Juta TL|1 Jan 1834|Georg zu Munster|Jerman & Israel|Karnivora|Panjang 4 m|Sauropterygia / Nothosauridae|Reptil laut semi-akuatik.|trias
+Cymbospondylus|Cymbospondylus|Trias|240-210 Juta TL|1 Jan 1868|Joseph Leidy|Nevada, AS|Karnivora|Panjang 10 m|Ichthyosauria / Cymbospondylidae|Ichthyosaurus raksasa Nevada.|trias
+Shonisaurus|Shonisaurus|Trias Akhir|215 Juta TL|1 Jan 1928|Charles Camp|Nevada, AS|Karnivora|Panjang 15 m|Ichthyosauria / Shastasauridae|Ichthyosaurus raksasa - fosil resmi Nevada.|trias
+Eudimorphodon|Eudimorphodon|Trias Akhir|210 Juta TL|1 Jan 1973|Rocco Zambelli|Italia|Piscivora|Bentang 1 m|Pterosauria / Eudimorphodontidae|Pterosaurus tertua dengan gigi beragam.|trias
+Peteinosaurus|Peteinosaurus|Trias Akhir|221-210 Juta TL|1 Jan 1978|Rupert Wild|Italia|Serangga|Bentang 60 cm|Pterosauria / Dimorphodontidae|Salah satu pterosaurus tertua.|trias
+Placerias|Placerias|Trias Akhir|220-215 Juta TL|1 Jan 1904|Lucas|Arizona, AS|Herbivora|Panjang 3,5 m|Dicynodontia / Kannemeyeriidae|Dicynodont bertaring besar.|trias
+Desmatosuchus|Desmatosuchus|Trias Akhir|230-210 Juta TL|1 Jan 1920|E.C. Case|Texas, AS|Herbivora|Panjang 5 m|Aetosauria / Stagonolepididae|Reptil berarmor dengan ekor berduri.|trias
+Rutiodon|Rutiodon|Trias Akhir|230 Juta TL|1 Jan 1856|Ebenezer Emmons|New Jersey, AS|Karnivora|Panjang 3 m|Phytosauria / Parasuchidae|Phytosaurus mirip buaya modern.|trias
+Brachiosaurus|Brachiosaurus|Juras Akhir|154-153 Juta TL|4 Jul 1903|Elmer Riggs|Colorado, AS|Herbivora|Panjang 26 m, tinggi 12 m|Dinosauria / Brachiosauridae|Leher 9 meter mencapai pucuk pohon.|juras
+Diplodocus|Diplodocus|Juras Akhir|154-152 Juta TL|1 Jul 1877|S.W. Williston|Colorado, AS|Herbivora|Panjang 27 m|Dinosauria / Diplodocidae|Dinosaurus terpanjang. Ekor seperti cambuk.|juras
+Apatosaurus|Apatosaurus|Juras Akhir|152-151 Juta TL|1 Jan 1877|Othniel C. Marsh|Colorado & Wyoming|Herbivora|Panjang 21 m|Dinosauria / Diplodocidae|Dulu dikenal sebagai Brontosaurus.|juras
+Stegosaurus|Stegosaurus|Juras Akhir|155-150 Juta TL|1 Apr 1877|Othniel C. Marsh|Colorado & Wyoming|Herbivora|Panjang 9 m|Dinosauria / Stegosauridae|Benteng berjalan dengan ekor berduri.|juras
+Allosaurus|Allosaurus|Juras Akhir|155-145 Juta TL|1 Jan 1869|Othniel C. Marsh|Utah, AS|Karnivora|Panjang 12 m|Dinosauria / Allosauridae|Predator puncak Juras.|juras
+Dilophosaurus|Dilophosaurus|Juras Awal|193 Juta TL|1 Jan 1942|Samuel Welles|Arizona, AS|Karnivora|Panjang 6 m|Dinosauria / Dilophosauridae|Karnivora berjambul, bukan beracun.|juras
+Archaeopteryx|Archaeopteryx|Juras Akhir|150 Juta TL|15 Agu 1861|Hermann von Meyer|Jerman|Karnivora|Panjang 50 cm|Aves / Archaeopterygidae|Mata rantai dinosaurus-burung.|juras
+Compsognathus|Compsognathus|Juras Akhir|150 Juta TL|1 Jan 1859|Johann A. Wagner|Jerman & Prancis|Karnivora|Panjang 1 m|Dinosauria / Compsognathidae|Dinosaurus seukuran ayam.|juras
+Ceratosaurus|Ceratosaurus|Juras Akhir|153-148 Juta TL|1 Jan 1884|Othniel C. Marsh|Colorado & Utah|Karnivora|Panjang 6 m|Dinosauria / Ceratosauridae|Karnivora dengan tanduk di hidung.|juras
+Megalosaurus|Megalosaurus|Juras Tengah|166 Juta TL|1 Jan 1824|William Buckland|Inggris|Karnivora|Panjang 6 m|Dinosauria / Megalosauridae|Dinosaurus pertama yang diberi nama.|juras
+Ichthyosaurus|Ichthyosaurus|Juras Awal|201-194 Juta TL|1 Jan 1811|Mary Anning|Inggris|Karnivora|Panjang 3 m|Ichthyosauria / Ichthyosauridae|Reptil laut mirip lumba-lumba.|juras
+Plesiosaurus|Plesiosaurus|Juras Awal|199-175 Juta TL|1 Jan 1821|Mary Anning|Inggris|Karnivora|Panjang 3,5 m|Sauropterygia / Plesiosauridae|Inspirasi mitos monster Loch Ness.|juras
+Dimorphodon|Dimorphodon|Juras Awal|195 Juta TL|1 Jan 1859|Richard Owen|Inggris|Karnivora|Bentang 1,5 m|Pterosauria / Dimorphodontidae|Pterosaurus dengan dua jenis gigi.|juras
+Rhamphorhynchus|Rhamphorhynchus|Juras Akhir|150 Juta TL|1 Jan 1831|Georg zu Munster|Jerman|Piscivora|Bentang 1,8 m|Pterosauria / Rhamphorhynchidae|Pterosaurus pemakan ikan.|juras
+Pterodactylus|Pterodactylus|Juras Akhir|150 Juta TL|1 Jan 1784|C.A. Collini|Jerman|Karnivora|Bentang 1 m|Pterosauria / Pterodactylidae|Pterosaurus pertama yang dinamai.|juras
+Kentrosaurus|Kentrosaurus|Juras Akhir|152 Juta TL|1 Jan 1915|Edwin Hennig|Tanzania|Herbivora|Panjang 4,5 m|Dinosauria / Stegosauridae|Sepupu Afrika Ste
