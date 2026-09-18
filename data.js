@@ -150,4 +150,4 @@ Smilodon|Smilodon|Pleistosen|2,5 Juta-10.000 TL|1 Jan 1842|Peter W. Lund|Amerika
 Woolly Mammoth|Woolly mammoth|Pleistosen|5 Juta-4.000 TL|1 Jan 1799|J.F. Blumenbach|Eurasia|Herbivora|Tinggi 3,5 m|Mammalia / Elephantidae|keno
 Woolly Rhinoceros|Woolly rhinoceros|Pleistosen|3,6 Juta-10.000 TL|1 Jan 1764|J.F. Blumenbach|Eurasia|Herbivora|3,8 m|Mammalia / Rhinocerotidae|keno
 Mastodon|Mastodon|Pleistosen|10,3 Juta-11.000 TL|1 Jan 1792|Robert Kerr|Amerika Utara|Herbivora|Tinggi 3 m|Mammalia / Mammutidae|keno
-Glyptodon|Glyptodon|Pleistosen|2 Juta-10.000 TL|1 Jan 1839|Richard Owen|Amerika Selatan|Herbivora
+Glyptodon|Glyptodon|Pleistosen|2 Juta-10.000 TL|1 Jan 1839|Richard Owen|Amerika Selatan|Herbivora;
